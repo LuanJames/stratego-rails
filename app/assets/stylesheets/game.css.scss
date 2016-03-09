@@ -1,0 +1,16 @@
+// Place all the styles related to the Game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@for $i from 0 through 11 {
+	[data-piece="#{$i}"] {
+		background-image: image-url("p/#{$i+1}.png")
+	}
+}
+
+[data-p="1"] {
+	background-color: rgba(0, 0, 255, 0.3);
+}
+[data-p="2"] {
+	background-color: rgba(255, 0, 0, 0.3);
+}

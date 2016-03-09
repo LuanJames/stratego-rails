@@ -1,0 +1,10 @@
+<table class="board">
+	<% 0.upto(9) do |z| %>
+
+  <tr>
+	<% 0.upto(9) do |x| %>
+    <td id="<%=z %>x<%=x %>" class="cell" draggable="true"></td>
+    <% end %>
+  </tr>
+  	<% end %>
+</table>

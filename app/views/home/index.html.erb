@@ -1,0 +1,43 @@
+
+<div class="row">
+<div class="col-md-8">
+	<%=render "field" %>
+</div>
+<div class="col-md-4">
+<ul id="user-list" class="nav nav-list">
+</ul>
+<div class="chat-div well">
+  <div id="chat" class="" data-uri="<%= request.host %>:<%= request.port %>/websocket">
+  </div>
+</div>
+
+
+<div class="formula form-inline well">
+  <fieldset>
+
+    Player: <input type="text" class="input-medium" id="user_name"><br>
+    Message: <input type="text" class="input-medium" id="message">
+    <button id="send" class="btn btn-default">Send</button>
+  </fieldset>
+</div>
+<p>
+<button id="ready" class="btn btn-primary">I'm ready!</button>
+</p>
+<div id="status">
+	<table id="table-pecas" class="pecas">
+    <%c = 0 %>
+  <%@pieces.each_with_index do |e, i| %>
+  <% if i % 3 == 0 %>
+  <% c = 0 %>
+  <tr>
+    <%end %>
+    <td class="column" draggable="true" data-piece="<%=i %>"></td>
+    <%c+=1 %>
+  <% if c==3 %>
+  <tr>
+    <%end %>
+  <%end %>
+	</table>
+</div>
+</div>
+</div>

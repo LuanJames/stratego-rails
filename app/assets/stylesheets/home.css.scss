@@ -1,0 +1,61 @@
+
+.board {
+  background-image: image-url("back.jpg")
+}
+
+.cell {
+	width:65px;
+	height:65px;
+	border: 1px solid #d0cece;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 1);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 1);
+box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 1);
+}
+.pecas td {
+	width:62px;
+	height:62px;
+	border: 1px solid #d0cece;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  cursor: move;
+}
+
+.column {
+  width:62px;
+  height:62px;
+  border: 1px solid #d0cece;
+
+  text-align: center;
+  font-size: 11px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 1);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 1);
+box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 1);
+}
+.over {
+  background-color:#74b469;
+}
+.jogada-possivel {
+  background-color:#74b469;
+}
+#chat {
+  
+overflow:hidden;
+}
+.chat-div {
+  width:370;
+  height:100px;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+.formula{
+  margin-bottom:0px;
+  margin-top:0px;
+}
